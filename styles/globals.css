@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+main {
+  max-width: 800px;
+  min-width: 320px;
+  margin: 20px auto;
+}

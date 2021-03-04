@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from "next/link";
 import Head from "next/head";
+import '../../styles/Home.module.css'
+import classes from './MainLayout.module.scss'
 
 const MainLayout = ({children, title = 'My Next'}) => {
   return (
@@ -10,7 +12,7 @@ const MainLayout = ({children, title = 'My Next'}) => {
         <meta charSet={'UTF-8'}/>
       </Head>
       <div>
-        <nav>
+        <nav className={classes.mainNav}>
           <Link href={'/creators'}>Creator of site</Link>
           <Link href={'/repositories'}>Repositories</Link>
         </nav>

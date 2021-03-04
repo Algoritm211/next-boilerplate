@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.errorTitle {
+  font-family: 'Abril Fatface', cursive;
+  color: indianred;
+  font-size: 50px;
+}
+
+.errorLink {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: indianred;
+  color: white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: red;
+  }
+}
