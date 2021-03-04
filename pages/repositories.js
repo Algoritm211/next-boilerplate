@@ -1,17 +1,14 @@
 import React from 'react';
 import Head from "next/head";
+import MainLayout from "../components/MainLayout/MainLayout";
 
 const Repositories = () => {
   return (
-    <React.Fragment>
-      <Head>
-        <title>Repositories</title>
-      </Head>
-
+    <MainLayout title={'Repositories'}>
       <div>
         Here you can see list of Repos)
       </div>
-    </React.Fragment>
+    </MainLayout>
   );
 };
 

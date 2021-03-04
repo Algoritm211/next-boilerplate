@@ -1,5 +1,6 @@
 import React from 'react'
 import Router from 'next/router'
+import MainLayout from "../components/MainLayout/MainLayout";
 
 const Creators = () => {
 
@@ -7,13 +8,13 @@ const Creators = () => {
   const goRepos = () => Router.push('/repositories')
 
   return (
-    <React.Fragment>
+    <MainLayout>
       <h1>Powered by Alex Horbunov</h1>
       <div>
         <button onClick={goRepos}>Go to repos</button>
         <button onClick={goHome}>Go home</button>
       </div>
-    </React.Fragment>
+    </MainLayout>
   )
 }
 

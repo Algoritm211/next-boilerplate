@@ -1,13 +1,11 @@
 import React from 'react'
 import Link from "next/link";
 import Head from "next/head";
+import MainLayout from "../components/MainLayout/MainLayout";
 
 const HomePage = () => {
   return (
-    <React.Fragment>
-      <Head>
-        <title>My Next Home</title>
-      </Head>
+    <MainLayout title={'Main Page'}>
       <div>
         <h1>
           Hello, Next
@@ -19,7 +17,7 @@ const HomePage = () => {
           <Link href={'/repositories'}>Repositories</Link>
         </div>
       </div>
-    </React.Fragment>
+    </MainLayout>
   )
 }
 
