@@ -1,8 +1,15 @@
 import '../styles/globals.css'
+import {Provider} from "react-redux";
+import {useStore} from "../redux/redux-store";
 
+const MyApp = ({Component, pageProps}) => {
+  const store = useStore(pageProps.initialReduxState)
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  )
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -17,4 +24,5 @@ function MyApp({ Component, pageProps }) {
 //   return { ...appProps }
 // }
 
-export default MyApp
+
+export default MyApp;
