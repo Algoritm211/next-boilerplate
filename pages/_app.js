@@ -1,14 +1,24 @@
 import '../styles/globals.css'
+import React from "react";
 import {Provider} from "react-redux";
 import {useStore} from "../redux/redux-store";
+import NextNProgress from "nextjs-progressbar";
 
 const MyApp = ({Component, pageProps}) => {
   const store = useStore(pageProps.initialReduxState)
 
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
+    <React.Fragment>
+      <NextNProgress
+        color="white"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height="7"
+      />
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    </React.Fragment>
   )
 }
 

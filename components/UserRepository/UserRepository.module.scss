@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;800&display=swap');
+
+
+.allUserInfo {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Playfair Display', serif;
+
+  .userImgGeo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .userImgGeo img {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+
+  .map {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+.info {
+  div > a {
+    color: darkgrey;
+    text-decoration: underline;
+  }
+
+  span {
+    font-weight: 800;
+  }
+}
+
+.sectionHeader {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+  div {
+    overflow-wrap: break-word;
+  }
+}

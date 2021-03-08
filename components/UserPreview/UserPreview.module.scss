@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    box-shadow: 6px 3px 7px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    div > span {
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+    }
+  }
+}

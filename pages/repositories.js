@@ -3,20 +3,22 @@ import MainLayout from "../components/MainLayout/MainLayout";
 import {useDispatch, useSelector} from "react-redux";
 import {loadUsers} from "../redux/users-reducer";
 import {initializeStore} from "../redux/redux-store";
+import Link from "next/link";
+import classes from '../styles/repositories.module.scss'
+import UserPreview from "../components/UserPreview/UserPreview";
 
 const Repositories = () => {
-  // const dispatch = useDispatch()
   const users = useSelector(state => state.usersReducer.users)
 
   const usersBlock = users.map(user => {
     return (
-      <div key={user.id}>{user.name}</div>
+      <UserPreview user={user} key={user.id} />
     )
   })
 
   return (
     <MainLayout title={'Repositories'}>
-      <div>
+      <div className={classes.repoTitle}>
         Here you can see list of Repos)
       </div>
       <div>
@@ -33,7 +35,7 @@ export const getServerSideProps = async () => {
 
   await dispatch(loadUsers())
 
-  return { props: { initialReduxState: reduxStore.getState() } }
+  return {props: {initialReduxState: reduxStore.getState()}}
 }
 
 export default Repositories

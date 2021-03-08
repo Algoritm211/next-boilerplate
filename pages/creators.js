@@ -1,6 +1,8 @@
 import React from 'react'
 import Router from 'next/router'
 import MainLayout from "../components/MainLayout/MainLayout";
+import classes from '../styles/creators.module.scss'
+
 
 const Creators = () => {
 
@@ -9,10 +11,11 @@ const Creators = () => {
 
   return (
     <MainLayout>
-      <h1>Powered by Alex Horbunov</h1>
-      <div>
-        <button onClick={goRepos}>Go to repos</button>
-        <button onClick={goHome}>Go home</button>
+      <h1 className={classes.creatorTitle}>Powered by Alex Horbunov</h1>
+      <div className={classes.buttonContainer}>
+        <a className="waves-effect waves-light btn" onClick={goRepos}>Go to repos</a>
+        <a className="waves-effect waves-light btn" onClick={goHome}>Go Home</a>
+        <a className="waves-effect waves-light btn" href={'https://github.com/Algoritm211/'} target={'_blank'}>Go to my Git</a>
       </div>
     </MainLayout>
   )
