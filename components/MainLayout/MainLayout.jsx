@@ -13,8 +13,9 @@ const MainLayout = ({children, title = 'My Next'}) => {
       </Head>
       <div>
         <nav className={classes.mainNav}>
-          <Link href={'/creators'}>Creator of site</Link>
+          <Link href={'/'}>Main</Link>
           <Link href={'/repositories'}>Repositories</Link>
+          <Link href={'/creators'}>Creator of site</Link>
         </nav>
         <main>
           {children}

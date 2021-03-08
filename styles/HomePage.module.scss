@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.mainTitle {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+}
+
+.section {
+
+  .title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+  }
+
+  .sectionContent {
+    a {
+      color: darkseagreen;
+      text-decoration: underline;
+    }
+  }
+}

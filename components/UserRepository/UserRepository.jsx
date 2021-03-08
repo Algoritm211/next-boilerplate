@@ -25,6 +25,7 @@ const UserRepository = ({user}) => {
             defaultCenter={{lat, lng}}
             defaultZoom={11}
           />
+          P.S Map works, but I disconnected billing
         </div>
       </div>
       <div className={classes.info}>
